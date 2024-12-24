@@ -1,0 +1,131 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{url}
+\usepackage{parskip} 	
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+%	BEGIN DOCUMENT
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+%	TITLE
+
+\begin{tabularx}{\linewidth}{@{} l @{}}
+\Huge{Sazid Mahmud} \\[7.5pt]
+\href{https://github.com/schlafer}{\raisebox{-0.05\height}\faGithub\ Sazid Mahmud}  \\ 
+\href{https://linkedin.com/in/sazid-mahmud-eee}{\raisebox{-0.05\height}\faLinkedin\ Sazid Mahmud} \\ 
+%\href{https://schalfer.github.io}{\raisebox{-0.05\height}\faGlobe \ schlafer.github.io} \ $|$ \ 
+\href{mailto:sazidm@proton.me}{\raisebox{-0.05\height}\faEnvelope \ sazidm@proton.me} \ 
+
+\end{tabularx}
+
+
+% EXPERIENCE SECTIONS
+
+%Interests/ Keywords/ Summary
+\section{Career Objective}
+Seeking for an opportunity to work with an organization to showcase my technical skills, perseverance, and leadership qualities.
+
+%Experience
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Open Source Contributor} & \hfill December 2024 - Now\\[3.75pt]
+\multicolumn{2}{@{}X@{}}
+{\begin{itemize}
+    \item Developing new features, fixing bugs, improving performance, or refactoring existing code.
+    \item Improving README files, writing installation guides to help new users and developers.
+    \item Reporting bugs, inconsistencies, or usability issues as well as suggesting new features to add.
+    \item Providing support on forums and discord channels.
+\end{itemize}}  \\
+\textbf{Researcher(EEE)} & \hfill August 2022 - Now \\[3.75pt]
+\multicolumn{2}{@{}X@{}}
+{\begin{itemize}
+    \item Reviewing and synthesizing existing literature in a research field.
+    \item Identifying key research gaps and formulate research questions based on findings.
+    \item Analyzing data, communicate through writing reports with visualization.
+    \item Collaborating with other researchers, faculty members, meeting deadlines.
+\end{itemize}}  \\
+\end{tabularx}
+
+%Projects
+
+%	EDUCATION
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2022 & B.Sc. in EEE at \textbf{Ahsanullah University of Science and Technology} \hfill (GPA: 3.361/4.0) \\ 
+
+%2016 & HSC at \textbf{St. Joseph Higher Secondary School}  \hfill  (GPA: 5.0/5.0) \\
+
+%2014 & SSC at \textbf{Banani Bidyaniketan School and College}  \hfill  (GPA: 5.0/5.0) \\
+\end{tabularx}
+
+
+%	PUBLICATIONS
+
+\section{Publications}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+
+%	SKILLS
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Languages : &  \normalsize{Python (NumPy, Pandas, Matplotlib, Seaborn), C/C++, Lua, Bash, VimScript, Verilog, \LaTeX.}\\
+IDE/Softwares : &  \normalsize{Jupyter Notebook, Vim, Arduino, MATLAB, Cadence Virtuoso, Microsoft Office (Word, Excel, PowerPoint, Visio), Google Workspace.}\\  
+ML Libraries :   &  \normalsize{TensorFlow, Keras, Scikit-learn.}\\ 
+OS :  &  \normalsize{Linux.}\\ 
+Version Control : &  \normalsize{Git, Github.}\\
+%Learning : &  \normalsize{SQL, Rust, Golang, Dart, Flutter.}\\
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
