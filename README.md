@@ -1,2 +1,2 @@
 # CV_latex
-Personal one page cv
+My CV 
