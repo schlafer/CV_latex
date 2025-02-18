@@ -7,6 +7,7 @@
 \usepackage[scale=0.9]{geometry}
 \usepackage{tabularx}
 \usepackage{enumitem}
+\usepackage{amsmath}
 
 % centered version of 'X' col. type
 \newcolumntype{C}{>{\centering\arraybackslash}X} 
@@ -41,7 +42,6 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
 %	BEGIN DOCUMENT
 
 \begin{document}
@@ -49,59 +49,121 @@
 % non-numbered pages
 \pagestyle{empty} 
 
-
 %	TITLE
 
 \begin{tabularx}{\linewidth}{@{} l @{}}
 \Huge{Sazid Mahmud} \\[7.5pt]
-\href{https://github.com/schlafer}{\raisebox{-0.05\height}\faGithub\ Sazid Mahmud}  \\ 
-\href{https://linkedin.com/in/sazid-mahmud-eee}{\raisebox{-0.05\height}\faLinkedin\ Sazid Mahmud} \\ 
+\text{+880-1621202274} \\
+\text{Mohakhali, Dhaka, Bangladesh.} \\
+\href{https://github.com/schlafer}{\raisebox{-0.05\height}\faGithub\ GitHub}  \\ 
+\href{https://linkedin.com/in/sazid-mahmud-eee}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \\ 
 %\href{https://schalfer.github.io}{\raisebox{-0.05\height}\faGlobe \ schlafer.github.io} \ $|$ \ 
-\href{mailto:sazidm@proton.me}{\raisebox{-0.05\height}\faEnvelope \ sazidm@proton.me} \ 
-
+\href{mailto:sazidm@proton.me}{\raisebox{-0.05\height}\faEnvelope\ Email} \\ 
 \end{tabularx}
-
 
 % EXPERIENCE SECTIONS
 
 %Interests/ Keywords/ Summary
 \section{Career Objective}
-Seeking for an opportunity to work with an organization to showcase my technical skills, perseverance, and leadership qualities. 
+I’m looking for an opportunity where I can dive deep into code, crush bottlenecks, and ship clean and scalable systems. I am a big fan of learning by doing and solving hard problems. Let’s build something great together!
 
-%Experience
+% Experience
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Open Source Contributor} & \hfill December 2024 - Now\\[3.75pt]
-\multicolumn{2}{@{}X@{}}
-{\begin{itemize}
-    \item Improving README files, writing installation guides to help new users and developers.
-    \item Reporting bugs, inconsistencies, or usability issues as well as suggesting new features to add.
-    \item Providing support on forums and discord channels.
-\end{itemize}}  \\
-\textbf{Researcher(EEE) - AUST} & \hfill August 2022 - August 2024 \\[3.75pt]
-\multicolumn{2}{@{}X@{}}
+%\textbf{Open Source Contributor} & \hfill December 2024 - Now\\[3.75pt]
+%\multicolumn{2}{>{\raggedright\arraybackslash}X}
+%{\begin{itemize}
+ %  \item Improving README files, writing installation guides to help new users and developers.
+ %  \item Reporting bugs, inconsistencies, or usability issues as well as suggesting new features to add.
+  % \item Providing support on forums and Discord channels.
+%\end{itemize}}  \\
+\textbf{Researcher (EEE) - AUST} & \hfill August 2022 - August 2024 \\[3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
 {\begin{itemize}
     \item Reviewing and synthesizing existing literature in a research field.
-    \item Identifying key research gaps and formulate research questions based on findings.
-    \item Analyzing data, communicate through writing reports with visualization.
+    \item Identifying key research gaps and formulating research questions based on findings.
+    \item Analyzing data, communicating findings through writing reports with visualization.
 \end{itemize}}  \\
 \end{tabularx}
 
-%Projects
+%   PROJECTS
 
-%	EDUCATION
+\section{Projects}
 
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2022 & B.Sc. in EEE at \textbf{Ahsanullah University of Science and Technology} \hfill (GPA: 3.361/4.0) \\ 
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
 
-2016 & HSC at \textbf{St. Joseph Higher Secondary School}  \hfill  (GPA: 5.0/5.0) \\
+\textbf{Go Microservice with GraphQL API(gRPC)} & \hfill \href{https://github.com/schlafer/micro-go}{\raisebox{-0.05\height}\faGithub\ Github}  \\ [3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+    \item This project demonstrates a microservices architecture using gRPC for inter-service communication and GraphQL as the API gateway. It includes services for account management, product catalog, and order processing.
+\end{itemize}}  \\
 
-2014 & SSC at \textbf{Banani Bidyaniketan School and College}  \hfill  (GPA: 5.0/5.0) \\
+\textbf{Cache-Proxy Server} & \hfill \href{https://github.com/schlafer/Cache-Proxy-Server}{\raisebox{-0.05\height}\faGithub\ Github}  \\ [3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+    \item A basic CLI tool that starts a caching proxy server, it will forward requests to the actual server and cache the responses. If the same request is made again, it will return the cached response instead of forwarding the request to the server. Written in Go.
+\end{itemize}}  \\
+
+\textbf{KanbanAPI} & \hfill \href{https://github.com/schlafer/KanbanAPI}{\raisebox{-0.05\height}\faGithub\ Github}  \\ [3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+    \item Kanban App REST API using Go, PostgreSQL(Xata) (Ongoing). 
+\end{itemize}}  \\
+
+\textbf{A TL approach to Classification of Traditional Snacks in BD 
+} & \hfill \href{https://github.com/schlafer/Bengali-Snacks-Thesis-AUST}{\raisebox{-0.05\height}\faGithub\ Github}  \\ [3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+    \item Undergrad thesis work on Computer Vision using TensorFlow-Keras. 
+\end{itemize}}  \\
+
+\textbf{Mock IEEE AUST SB Website} & \hfill \href{https://github.com/schlafer/ieee_mock_website}{\raisebox{-0.05\height}\faGithub\ Github}  \\ [3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+    \item Mockup of the IEEE website for my university. Written in HTML, CSS, JavaScript.
+\end{itemize}}  \\
+
 \end{tabularx}
 
+%	SKILLS
 
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Languages : &  \normalsize{Go, SQL, Python, C/C++, HTML, CSS, JS, Bash, Verilog, Lua.}\\
+Softwares : &  \normalsize{Microsoft Office Suite, Google Workspace, Linux, Docker, Jupyter Notebook, Vim, MATLAB \& Simulink, Cadence Virtuoso.}\\
+Hardwares : &  \normalsize{ATmega328P MCU, Altera Cyclone II FPGA.}\\
+Database : &  \normalsize{PostgreSQL.}\\  
+VCS : &  \normalsize{Git, Github.}\\
+DL Framework : & \normalsize{TensorFlow, Keras.}\\
+%Learning : &  \normalsize{Kubernetes, Rust, Docker, Dart, Flutter.}\\
+\end{tabularx}
+
+% Extra-curricular Activities
+
+\section{Voluntary Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\textbf{Open Source Contributor} & \hfill December 2024 - Now\\[3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+   \item Improving README files, writing installation guides to help new users and developers.
+   \item Reporting bugs, inconsistencies, or usability issues as well as suggesting new features to add.
+   \item Providing support on forums and Discord channels.
+\end{itemize}}  \\
+\textbf{Webmaster - IEEE AUST SB} & \hfill March 2021 - March 2022\\[3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+    \item Conceptualized, planned and executed original designs for a wide range of website properties.
+    \item Planned website development, converting mock-ups into a usable web presence with HTML, CSS, and JavaScript coding.
+\end{itemize}}  \\
+\textbf{Vice Chair - IEEE PES AUST SB Chapter} & \hfill March 2021 - March 2022\\[3.75pt]
+\multicolumn{2}{>{\raggedright\arraybackslash}X}
+{\begin{itemize}
+    \item Assisted other executive committee members with executing specific projects.
+    \item Planned and directed IEEE Power \& Energy Society AUST Student Branch Chapter endorsed events.
+\end{itemize}}  \\
+\end{tabularx}
 %	PUBLICATIONS
 
 \section{Publications}
@@ -110,40 +172,16 @@ Seeking for an opportunity to work with an organization to showcase my technical
 \printbibliography[heading=none]
 \end{refsection}
 
+%	EDUCATION
 
-%	SKILLS
-
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Languages : &  \normalsize{Python, C/C++, Go, SQL, Lua, HTML, CSS, JavaScript, Bash, Verilog, \LaTeX.}\\
-Softwares : &  \normalsize{Jupyter Notebook, Vim, MATLAB, Cadence Virtuoso, Microsoft Office Suit, Google Workspace.}\\  
-OS :  &  \normalsize{Linux.}\\ 
-VCS : &  \normalsize{Git, Github.}\\
-DL Framework : & \normalsize{TensorFlow, Keras.}\\
-%Learning : &  \normalsize{Kubernetes, Rust, Docker, Dart, Flutter.}\\
-\end{tabularx}
-
-\section{Extra-curricular Activities}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Webmaster - IEEE AUST SB} & \hfill March 2021 - March 2022\\[3.75pt]
-\multicolumn{2}{@{}X@{}}
-{\begin{itemize}
-    \item Conceptualized, planned and executed original designs for wide range of website properties.
-    \item Planned website development, converting mock-ups into usable web presence with HTML, CSS and JavaScript coding.
-    
-\end{itemize}}  \\
-\textbf{Vice Chair - IEEE PES AUST SB Chapter} & \hfill March 2021 - March 2022\\[3.75pt]
-\multicolumn{2}{@{}X@{}}
-{\begin{itemize}
-    \item Assisted other executive committee members with executing specific projects.
-    \item Planned and directed IEEE Power \& Energy Society AUST Student Branch Chapter endorsed events.
-
-\end{itemize}}  \\
-   
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2022 & B.Sc. in EEE at \textbf{Ahsanullah University of Science and Technology} \hfill (GPA: 3.361/4.0) \\ 
 
 \end{tabularx}
 
 \vfill
+\center{\footnotesize Written in: \LaTeX}
 \center{\footnotesize Last updated: \today}
 
 \end{document}
